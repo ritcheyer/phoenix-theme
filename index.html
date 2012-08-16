@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Phoenix-theme by netatoo</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Phoenix-theme</h1>
+        <p class="header">Dark &amp; Light custom UI themes with colors variations for Sublime Text 2</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/netatoo/phoenix-theme/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/netatoo/phoenix-theme/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/netatoo/phoenix-theme">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/netatoo">netatoo</a></p>
+
+
+      </header>
+      <section>
+        <h3>Light Theme</h3>
+
+<p><img src="http://ballejaune.net/phoenix/Phoenix-Light.png?v=2" alt="Phoenix Light Theme">
+Phoenix Light Theme currently provides a single color alternative :
+<img src="http://ballejaune.net/phoenix/Phoenix-Light-Blue.png?v=2" alt="Phoenix Light Blue Theme"></p>
+
+<h3>Dark Theme</h3>
+
+<p><img src="http://ballejaune.net/phoenix/Phoenix-Dark.png?v=2" alt="Phoenix Dark Theme">
+Phoenix Dark Theme currently provides six alternate colors :</p>
+
+<p><img src="http://ballejaune.net/phoenix/Phoenix-Dark-Green.png?v=1" alt="Phoenix Dark Green Theme"><img src="http://ballejaune.net/phoenix/Phoenix-Dark-Blue.png?v=1" alt="Phoenix Dark Blue Theme"><img src="http://ballejaune.net/phoenix/Phoenix-Dark-Orange.png?v=1" alt="Phoenix Dark Orange Theme"><img src="http://ballejaune.net/phoenix/Phoenix-Dark-Red.png?v=1" alt="Phoenix Dark Red Theme"><img src="http://ballejaune.net/phoenix/Phoenix-Dark-Yellow.png?v=1" alt="Phoenix Dark Yellow Theme"><img src="http://ballejaune.net/phoenix/Phoenix-Dark-Pink.png?v=1" alt="Phoenix Dark Pink Theme"></p>
+
+<h2>Todo's</h2>
+
+<ul>
+<li>Add more alternate colors for Light Theme (green, red, orange)</li>
+</ul><h2>Installation</h2>
+
+<p>Phoenix theme is designed to work with the latest <a href="http://www.sublimetext.com/dev">development build</a> of Sublime Text 2.</p>
+
+<h3>Using Sublime Package Control</h3>
+
+<p>If you are using Will Bond's excellent <a href="http://wbond.net/sublime_packages/package_control">Sublime Package Control</a>, you can easily install Phoenix Theme via the <code>Package Control: Install Package</code> menu item. The Phoenix Theme package is listed as <code>Theme - Phoenix</code> in the packages list.</p>
+
+<h3>Using Git</h3>
+
+<p>Alternatively, if you are a git user, you can install the theme and keep up to date by cloning the repo directly into your <code>Packages</code> directory in the Sublime Text 2 application settings area.</p>
+
+<p>You can locate your Sublime Text 2 <code>Packages</code> directory by using the menu item <code>Preferences -&gt; Browse Packages...</code>.</p>
+
+<p>While inside the <code>Packages</code> directory, clone the theme repository using the command below:</p>
+
+<pre><code>git clone https://github.com/netatoo/phoenix-theme/ "Theme - Phoenix"
+</code></pre>
+
+<h3>Download Manually</h3>
+
+<ul>
+<li>Download the files using the GitHub .zip download option</li>
+<li>Unzip the files and rename the folder to <code>Theme - Phoenix</code>
+</li>
+<li>Copy the folder to your Sublime Text 2 <code>Packages</code> directory</li>
+</ul><h2>Activating the theme</h2>
+
+<p>To configure Sublime Text 2 to use the theme:</p>
+
+<ul>
+<li>Open your User Settings Preferences file <code>Sublime Text 2 -&gt; Preferences -&gt; Settings - User</code>
+</li>
+<li>Add (or update) your theme entry to be <code>"theme": "Phoenix Light.sublime-theme"</code> or <code>"theme": "Phoenix Dark.sublime-theme"</code>
+</li>
+</ul><h3>Example User Settings</h3>
+
+<pre><code>{
+    "theme": "Phoenix Dark.sublime-theme"
+}
+</code></pre>
+
+<h2>Additional Features</h2>
+
+<h3>Alternate Colors</h3>
+
+<p>Phoenix Theme ships with 6 alternate color styles. To configure you favorite color:</p>
+
+<ul>
+<li>Open your User Settings Preferences file <code>Sublime Text 2 -&gt; Preferences -&gt; Settings - User</code>
+</li>
+<li>Add (or update) the <code>phoenix_color_*</code> entry</li>
+</ul><p><strong>Light theme :</strong> <code>blue</code> - <strong>Dark Theme :</strong> <code>red</code>, <code>green</code>, <code>blue</code>, <code>orange</code>, <code>yellow</code> and <code>pink</code></p>
+
+<pre><code>"phoenix_color_blue": true
+</code></pre>
+
+<h3>Colorize opened folders on Dark Theme</h3>
+
+<p>Enable this setting to colorize opened folder icons on sidebar, when using Dark Theme with color variation.</p>
+
+<pre><code>"phoenix_color_expanded_folder": true
+</code></pre>
+
+<h3>Blur current tab color</h3>
+
+<p>Enable this setting to bring out the background color on the current tab :</p>
+
+<pre><code>"phoenix_blur_current_tab": true
+</code></pre>
+
+<p><img src="http://img854.imageshack.us/img854/7839/phoenixblurcurrenttab.png?v=1" alt="Phoenix Dark Blur Current Tab"></p>
+
+<h3>Color the text label on current tab</h3>
+
+<p>You can colorize or not the text label (filename) of the current tab :</p>
+
+<pre><code>"phoenix_highlight_current_tab": true    
+</code></pre>
+
+<p><img src="http://img341.imageshack.us/img341/6887/phoenixhighlightcurrent.png?v=1" alt="Phoenix Dark Highlight Current Tab"></p>
+
+<h3>Simply choose the height of your tabs!</h3>
+
+<p>Prefer small tabs? No problem, there is a custom setting for this!</p>
+
+<pre><code>"phoenix_tabs_small": true
+</code></pre>
+
+<p><img src="http://img853.imageshack.us/img853/9093/phoenixtabssizing.png?v=1" alt="Phoenix Dark Tab Sizing"></p>
+
+<p>For now, five height are available : <code>small</code>, <code>medium</code>, <code>normal</code> (by default), <code>large</code>, and <code>xlarge</code></p>
+
+<h3>Automatic width tabs</h3>
+
+<p>You want your tabs with automatic width? there is a custom setting for this!</p>
+
+<pre><code>"phoenix_tabs_auto_width": true
+</code></pre>
+
+<h3>Custom Color Scheme</h3>
+
+<p>Phoenix Theme provide two slightly modified color scheme to magnify the interface.</p>
+
+<h4>Clouds Midnight</h4>
+
+<p><img src="http://img809.imageshack.us/img809/4797/phoenixcloudsmidnightsc.png?v=1" alt="Phoenix Dark Clouds Midnight"></p>
+
+<h4>Tomorrow Night</h4>
+
+<p><img src="http://img269.imageshack.us/img269/8480/phoenixtomorrowscheme.png?v=1" alt="Phoenix Dark Tomorrow Night"></p>
+
+<h3>Retina Resolution UI</h3>
+
+<p>Phoenix Theme has been designed to take advantage of retina resolution (high-dpi) displays. Phoenix Theme support retina displays.</p>
+
+<h3>Theme Customisation</h3>
+
+<p>Sublime Text 2 provides an elegant way to tweak existing themes without having to duplicate or maintain a separate copy of the original theme. If there are aspects of Soda Theme that you would like to adjust, take a look at the <a href="https://github.com/buymeasoda/soda-theme/wiki/Theme-customisation">theme customisation</a> wiki page.</p>
+
+<h2>License</h2>
+
+<p>Based on Soda Theme by Ian Hill (<a href="http://buymeasoda.com/">http://buymeasoda.com/</a>)</p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>
