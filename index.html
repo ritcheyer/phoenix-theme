@@ -7,7 +7,6 @@
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="javascripts/scale.fix.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -16,36 +15,59 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1 class="header">Phoenix-theme</h1>
-        <p class="header">Dark &amp; Light custom UI themes with colors variations for Sublime Text 2</p>
+        <h1>Phoenix-theme</h1>
+        <p>Dark &amp; Light custom UI themes with colors variations for Sublime Text 2</p>
+
+        <p class="view"><a href="https://github.com/netatoo/phoenix-theme">View the Project on GitHub <small>netatoo/phoenix-theme</small></a></p>
+
 
         <ul>
-          <li class="download"><a class="buttons" href="https://github.com/netatoo/phoenix-theme/zipball/master">Download ZIP</a></li>
-          <li class="download"><a class="buttons" href="https://github.com/netatoo/phoenix-theme/tarball/master">Download TAR</a></li>
-          <li><a class="buttons github" href="https://github.com/netatoo/phoenix-theme">View On GitHub</a></li>
+          <li><a href="https://github.com/netatoo/phoenix-theme/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/netatoo/phoenix-theme/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/netatoo/phoenix-theme">View On <strong>GitHub</strong></a></li>
         </ul>
-
-        <p class="header">This project is maintained by <a class="header name" href="https://github.com/netatoo">netatoo</a></p>
-
-
       </header>
       <section>
         <h3>Light Theme</h3>
 
-<p><img src="http://ballejaune.net/phoenix/Phoenix-Light.png?v=2" alt="Phoenix Light Theme">
-Phoenix Light Theme currently provides a single color alternative :
-<img src="http://ballejaune.net/phoenix/Phoenix-Light-Blue.png?v=2" alt="Phoenix Light Blue Theme"></p>
+<p><img src="http://ballejaune.net/phoenix/Phoenix-Light.png?v=2" alt="Phoenix Light Theme"></p>
+
+<h5>Light Blue</h5>
+
+<p><img src="http://ballejaune.net/phoenix/Phoenix-Light-Blue.png?v=2" alt="Phoenix Light Blue Theme"></p>
 
 <h3>Dark Theme</h3>
 
-<p><img src="http://ballejaune.net/phoenix/Phoenix-Dark.png?v=2" alt="Phoenix Dark Theme">
-Phoenix Dark Theme currently provides six alternate colors :</p>
+<p><img src="http://ballejaune.net/phoenix/Phoenix-Dark.png?v=3" alt="Phoenix Dark Theme"></p>
 
-<p><img src="http://ballejaune.net/phoenix/Phoenix-Dark-Green.png?v=1" alt="Phoenix Dark Green Theme"><img src="http://ballejaune.net/phoenix/Phoenix-Dark-Blue.png?v=1" alt="Phoenix Dark Blue Theme"><img src="http://ballejaune.net/phoenix/Phoenix-Dark-Orange.png?v=1" alt="Phoenix Dark Orange Theme"><img src="http://ballejaune.net/phoenix/Phoenix-Dark-Red.png?v=1" alt="Phoenix Dark Red Theme"><img src="http://ballejaune.net/phoenix/Phoenix-Dark-Yellow.png?v=1" alt="Phoenix Dark Yellow Theme"><img src="http://ballejaune.net/phoenix/Phoenix-Dark-Pink.png?v=1" alt="Phoenix Dark Pink Theme"></p>
+<h5>Dark Green</h5>
+
+<p><img src="http://ballejaune.net/phoenix/Phoenix-Dark-Green.png?v=2" alt="Phoenix Dark Green Theme"></p>
+
+<h5>Dark Blue</h5>
+
+<p><img src="http://ballejaune.net/phoenix/Phoenix-Dark-Blue.png?v=2" alt="Phoenix Dark Blue Theme"></p>
+
+<h5>Dark Red</h5>
+
+<p><img src="http://ballejaune.net/phoenix/Phoenix-Dark-Red.png?v=2" alt="Phoenix Dark Red Theme"></p>
+
+<h5>Dark Pink</h5>
+
+<p><img src="http://ballejaune.net/phoenix/Phoenix-Dark-Pink.png?v=2" alt="Phoenix Dark Pink Theme"></p>
+
+<h5>Dark Orange</h5>
+
+<p><img src="http://ballejaune.net/phoenix/Phoenix-Dark-Orange.png?v=2" alt="Phoenix Dark Orange Theme"></p>
+
+<h5>Dark Yellow</h5>
+
+<p><img src="http://ballejaune.net/phoenix/Phoenix-Dark-Yellow.png?v=2" alt="Phoenix Dark Yellow Theme"></p>
 
 <h2>Todo's</h2>
 
 <ul>
+<li>Improve colors of tab-close/tab-highlight button on selected tabs</li>
 <li>Add more alternate colors for Light Theme (green, red, orange)</li>
 </ul><h2>Installation</h2>
 
@@ -82,16 +104,14 @@ Phoenix Dark Theme currently provides six alternate colors :</p>
 </li>
 <li>Add (or update) your theme entry to be <code>"theme": "Phoenix Light.sublime-theme"</code> or <code>"theme": "Phoenix Dark.sublime-theme"</code>
 </li>
-</ul><h3>Example User Settings</h3>
+</ul><h4>Example User Settings</h4>
 
 <pre><code>{
     "theme": "Phoenix Dark.sublime-theme"
 }
 </code></pre>
 
-<h2>Additional Features</h2>
-
-<h3>Alternate Colors</h3>
+<h2>Alternate Colors</h2>
 
 <p>Phoenix Theme ships with 6 alternate color styles. To configure you favorite color:</p>
 
@@ -101,8 +121,43 @@ Phoenix Dark Theme currently provides six alternate colors :</p>
 <li>Add (or update) the <code>phoenix_color_*</code> entry</li>
 </ul><p><strong>Light theme :</strong> <code>blue</code> - <strong>Dark Theme :</strong> <code>red</code>, <code>green</code>, <code>blue</code>, <code>orange</code>, <code>yellow</code> and <code>pink</code></p>
 
+<h4>Example for Blue variant</h4>
+
 <pre><code>"phoenix_color_blue": true
 </code></pre>
+
+<h2>Custom settings</h2>
+
+<h3>Hightlight text label on selected tab</h3>
+
+<p>You can hightlight or not the text label (filename) of the selected tab :</p>
+
+<pre><code>"phoenix_highlight_current_tab": true    
+</code></pre>
+
+<p><img src="http://ballejaune.net/phoenix/Phoenix-Highlight-Current-Tab.png?v=1" alt="Phoenix Dark Highlight Current Tab"></p>
+
+<h3>Blur selected tab color</h3>
+
+<p>Enable this setting to bring out the background color on the selected tab :</p>
+
+<pre><code>"phoenix_blur_current_tab": true
+</code></pre>
+
+<p><img src="http://ballejaune.net/phoenix/Phoenix-Blur-Current-Tab.png?v=1" alt="Phoenix Dark Blur Current Tab"></p>
+
+<h3>Combined</h3>
+
+<p><img src="http://ballejaune.net/phoenix/Phoenix-Combine-Current-Tab.png?v=1" alt="Phoenix Dark Combined Current Tab"></p>
+
+<h3>Solid selected tabs</h3>
+
+<p>Enable this setting to get <strong>solid</strong> background color on the selected tab :</p>
+
+<pre><code>"phoenix_solid_current_tab": true
+</code></pre>
+
+<p><img src="http://ballejaune.net/phoenix/Phoenix-Solid-Current-Tab.png?v=1" alt="Phoenix Dark Solid Current Tab"></p>
 
 <h3>Colorize opened folders on Dark Theme</h3>
 
@@ -111,32 +166,12 @@ Phoenix Dark Theme currently provides six alternate colors :</p>
 <pre><code>"phoenix_color_expanded_folder": true
 </code></pre>
 
-<h3>Blur current tab color</h3>
-
-<p>Enable this setting to bring out the background color on the current tab :</p>
-
-<pre><code>"phoenix_blur_current_tab": true
-</code></pre>
-
-<p><img src="http://img854.imageshack.us/img854/7839/phoenixblurcurrenttab.png?v=1" alt="Phoenix Dark Blur Current Tab"></p>
-
-<h3>Color the text label on current tab</h3>
-
-<p>You can colorize or not the text label (filename) of the current tab :</p>
-
-<pre><code>"phoenix_highlight_current_tab": true    
-</code></pre>
-
-<p><img src="http://img341.imageshack.us/img341/6887/phoenixhighlightcurrent.png?v=1" alt="Phoenix Dark Highlight Current Tab"></p>
-
 <h3>Simply choose the height of your tabs!</h3>
 
 <p>Prefer small tabs? No problem, there is a custom setting for this!</p>
 
 <pre><code>"phoenix_tabs_small": true
 </code></pre>
-
-<p><img src="http://img853.imageshack.us/img853/9093/phoenixtabssizing.png?v=1" alt="Phoenix Dark Tab Sizing"></p>
 
 <p>For now, five height are available : <code>small</code>, <code>medium</code>, <code>normal</code> (by default), <code>large</code>, and <code>xlarge</code></p>
 
@@ -153,11 +188,13 @@ Phoenix Dark Theme currently provides six alternate colors :</p>
 
 <h4>Clouds Midnight</h4>
 
-<p><img src="http://img809.imageshack.us/img809/4797/phoenixcloudsmidnightsc.png?v=1" alt="Phoenix Dark Clouds Midnight"></p>
+<p>Original theme : (<a href="http://fredhq.com/projects/clouds">http://fredhq.com/projects/clouds</a>)
+<img src="http://ballejaune.net/phoenix/Phoenix-CloudsMidnightScheme.png?v=1" alt="Phoenix Dark Clouds Midnight"></p>
 
 <h4>Tomorrow Night</h4>
 
-<p><img src="http://img269.imageshack.us/img269/8480/phoenixtomorrowscheme.png?v=1" alt="Phoenix Dark Tomorrow Night"></p>
+<p>Original theme : (<a href="https://github.com/chriskempson/Tomorrow-Theme">https://github.com/chriskempson/Tomorrow-Theme</a>)
+<img src="http://ballejaune.net/phoenix/Phoenix-TomorrowScheme.png?v=1" alt="Phoenix Dark Tomorrow Night"></p>
 
 <h3>Retina Resolution UI</h3>
 
@@ -172,11 +209,12 @@ Phoenix Dark Theme currently provides six alternate colors :</p>
 <p>Based on Soda Theme by Ian Hill (<a href="http://buymeasoda.com/">http://buymeasoda.com/</a>)</p>
       </section>
       <footer>
-        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+        <p>This project is maintained by <a href="https://github.com/netatoo">netatoo</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-		          <script type="text/javascript">
+    <script src="javascripts/scale.fix.js"></script>
+              <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
